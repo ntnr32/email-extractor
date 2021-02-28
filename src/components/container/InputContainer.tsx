@@ -16,7 +16,7 @@ const InputContainer: React.FC<InputContainerProps> = (props) => {
     const { title, desc, containerStyle, disableInput, textAreaValue, textAreaPlaceholder, txtOnChangeHandler, children } = props;
 
     return (
-        <section className={`${containerStyle} m-5 border border-gray-300 shadow-xl rounded-md`} >
+        <section className={`${containerStyle} m-5 border border-gray-300 shadow-xl rounded-md bg-white`} >
             <div className="p-2">
                 <h2 className="text-gray-800 text-base">{title}</h2>
                 <span className="text-gray-400 text-xs">{desc}</span>
