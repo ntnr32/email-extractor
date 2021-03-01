@@ -14,8 +14,11 @@ const App = () => {
     const defaultDelimeter = ";";
 
     const [inputText, setInputText] = useState("");
+    const [originalResultSet, setOriginalResultSet] = useState([""] || null);
+    const [uniqueResultSet, setUniqueResultSet] = useState([""] || null);
     const [resultText, setResultText] = useState("");
     const [delimeter, setDelimeter] = useState(defaultDelimeter);
+
     // TODO: Implement Remove duplicates
     const [removeDuplicates, setRemoveDuplicates] = useState(false);
 
@@ -26,11 +29,19 @@ const App = () => {
     const extractClickHandler = () => {
         debugger;
         if (inputText) {
+
             const matchedText = inputText.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
             const matchedTextLength = matchedText?.length || 0;
+
             if (matchedText && matchedTextLength > 0) {
-                const finalText = matchedText.join(delimeter || defaultDelimeter);
-                setResultText(finalText)
+                setOriginalResultSet(matchedText);
+
+                const matchtedTextSet = removeDuplicates ? removeDuplicatesFromArray(matchedText) : matchedText;
+                const finalText = matchtedTextSet.join(delimeter || defaultDelimeter);
+
+                setUniqueResultSet(matchtedTextSet);
+                setResultText(finalText);
+
             } else {
                 toast("No Match Found ❗");
             }
@@ -52,6 +63,19 @@ const App = () => {
             toast("Extract data first");
         }
     }
+
+    const removeDuplicatesFromArray = (data: Array<string>) => {
+        return [...new Set(data)];
+    }
+
+    const getDuplicateCount = () => {
+        const uniqueSetLength = uniqueResultSet[0] ? uniqueResultSet.length : 0;
+        const originalResultSetLength = originalResultSet[0] ? originalResultSet.length : 0;
+        return +(originalResultSetLength - uniqueSetLength);
+    }
+
+    console.log(resultText.split(delimeter).length);
+
 
     return (
 
@@ -94,6 +118,8 @@ const App = () => {
                     txtOnChangeHandler={txtOnChangeHandler}
                 >
                     <ResultContainerControl
+                        uniqueResultCount={uniqueResultSet[0] ? uniqueResultSet.length : 0}
+                        duplicateConut={getDuplicateCount()}
                         buttonClickHandler={copyClickHandler}
                     />
                 </InputContainer>
