@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/email-extractor/static/css/main.a71659ae.chunk.css",
-    "main.js": "/email-extractor/static/js/main.55f69a6a.chunk.js",
-    "main.js.map": "/email-extractor/static/js/main.55f69a6a.chunk.js.map",
+    "main.js": "/email-extractor/static/js/main.f32b9306.chunk.js",
+    "main.js.map": "/email-extractor/static/js/main.f32b9306.chunk.js.map",
     "runtime-main.js": "/email-extractor/static/js/runtime-main.3b641758.js",
     "runtime-main.js.map": "/email-extractor/static/js/runtime-main.3b641758.js.map",
     "static/css/2.e5940d02.chunk.css": "/email-extractor/static/css/2.e5940d02.chunk.css",
-    "static/js/2.ff60f122.chunk.js": "/email-extractor/static/js/2.ff60f122.chunk.js",
-    "static/js/2.ff60f122.chunk.js.map": "/email-extractor/static/js/2.ff60f122.chunk.js.map",
+    "static/js/2.01f665ab.chunk.js": "/email-extractor/static/js/2.01f665ab.chunk.js",
+    "static/js/2.01f665ab.chunk.js.map": "/email-extractor/static/js/2.01f665ab.chunk.js.map",
     "index.html": "/email-extractor/index.html",
     "static/css/2.e5940d02.chunk.css.map": "/email-extractor/static/css/2.e5940d02.chunk.css.map",
     "static/css/main.a71659ae.chunk.css.map": "/email-extractor/static/css/main.a71659ae.chunk.css.map",
-    "static/js/2.ff60f122.chunk.js.LICENSE.txt": "/email-extractor/static/js/2.ff60f122.chunk.js.LICENSE.txt"
+    "static/js/2.01f665ab.chunk.js.LICENSE.txt": "/email-extractor/static/js/2.01f665ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3b641758.js",
     "static/css/2.e5940d02.chunk.css",
-    "static/js/2.ff60f122.chunk.js",
+    "static/js/2.01f665ab.chunk.js",
     "static/css/main.a71659ae.chunk.css",
-    "static/js/main.55f69a6a.chunk.js"
+    "static/js/main.f32b9306.chunk.js"
   ]
 }
