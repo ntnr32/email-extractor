@@ -12,7 +12,7 @@ const TextArea: React.FC<TextAreaProp> = ({ name, placeholder, disabled, value, 
 
     return (
         <textarea
-            className="border w-full h-full box-border resize-none outline-none"
+            className="border-2 rounded-md p-1 w-full h-full box-border resize-none outline-none bg-transparent text-white placeholder-white"
             name={name}
             id={`txt` + name}
             disabled={disabled}

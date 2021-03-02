@@ -74,9 +74,6 @@ const App = () => {
         return +(originalResultSetLength - uniqueSetLength);
     }
 
-    console.log(resultText.split(delimeter).length);
-
-
     return (
 
         <React.Fragment>

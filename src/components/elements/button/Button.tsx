@@ -4,14 +4,15 @@ import "./button.css"
 
 type ButtonProps = {
     name: string,
+    className?: string,
     onClickHandler: () => void
 }
 
-const GrayButton: React.FC<ButtonProps> = ({ name, onClickHandler }) => {
+const Button: React.FC<ButtonProps> = ({ name, className, onClickHandler }) => {
     return (
         <button
             type="button"
-            className="btn text-xs font-bold uppercase"
+            className={`btn text-white text-xs font-bold uppercase animate-shake`}
             onClick={onClickHandler}
         >
             {name}
@@ -19,4 +20,4 @@ const GrayButton: React.FC<ButtonProps> = ({ name, onClickHandler }) => {
     )
 }
 
-export default GrayButton
+export default Button

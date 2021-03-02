@@ -20,7 +20,7 @@ const Nav: React.FunctionComponent<NavBarProps> = ({ brandName }) => {
 
     return (
         <section className="navbar">
-            <nav className="w-full relative py-3 mb-3 shadow-lg bg-indigo-500">
+            <nav className="w-full relative py-3 mb-3 shadow-lg bg-transparent">
                 <div className="flex  items-center justify-between">
                     <div className="w-full flex justify-between md:w-auto px-4">
                         <div className="flex text-white">

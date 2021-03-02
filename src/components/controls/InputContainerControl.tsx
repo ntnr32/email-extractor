@@ -1,6 +1,6 @@
 import React from 'react'
 
-import GrayButton from '../elements/button/GrayButton';
+import Button from '../elements/button/Button';
 import CheckBox from '../elements/CheckBox';
 import SingleCharInput from '../elements/SingleCharInput';
 
@@ -12,6 +12,7 @@ type InputContainerControlProps = {
 }
 
 const InputContainerControl: React.FC<InputContainerControlProps> = ({ delimeterValue, buttonClickHandler, delimeterOnChangeHandler, duplicateOnChangeHandler }) => {
+
     return (
         <>
             <div className="my-auto">
@@ -20,8 +21,8 @@ const InputContainerControl: React.FC<InputContainerControlProps> = ({ delimeter
             <div className="my-auto">
                 <CheckBox label="Remove Duplicate" onChangeHandler={duplicateOnChangeHandler} />
             </div>
-            <div className="my-auto ml-auto">
-                <GrayButton name="Extract" onClickHandler={buttonClickHandler} />
+            <div className={`my-auto ml-auto`}>
+                <Button name="Extract" onClickHandler={buttonClickHandler} />
             </div>
         </>
     )

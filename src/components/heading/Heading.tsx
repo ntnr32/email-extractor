@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 
 type HeadingProps = {
     text: string
@@ -7,7 +8,18 @@ type HeadingProps = {
 const Heading = ({ text }: HeadingProps) => {
     return (
         <section id="heading" className="heading m-auto text-center">
-            <h1 className="text-xl">{text}</h1>
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter.typeString(text)
+                        .deleteAll()
+                        .start();
+                }}
+                options={{
+                    wrapperClassName: "text-2xl text-white uppercase font-bold",
+                    autoStart: true,
+                    loop: true
+                }}
+            />
         </section>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import GrayButton from '../elements/button/GrayButton';
+import Button from '../elements/button/Button';
 
 
 type ResultContainerControlProps = {
@@ -19,7 +19,7 @@ const ResultContainerControl: React.FC<ResultContainerControlProps> = ({ uniqueR
                 <label className="leading-normal text-gray-500 text-xs">Duplicates: {duplicateConut}</label>
             </div>
             <div className="my-auto ml-auto">
-                <GrayButton name="Copy" onClickHandler={buttonClickHandler} />
+                <Button name="Copy" onClickHandler={buttonClickHandler} />
             </div>
         </>
     )
