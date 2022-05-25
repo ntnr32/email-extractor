@@ -1,5 +1,5 @@
 .btn {
-  @apply py-1 px-5 focus:outline-none rounded-md hover:text-blue-600 hover:bg-green-400;
+  @apply py-1 px-5 focus:outline-none rounded-md hover:bg-blue-300;
 }
 
 .animate-shake {
